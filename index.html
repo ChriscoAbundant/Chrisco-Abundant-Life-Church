@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrisco Abundant Live Church</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #E2E8F0, #ffffff);
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 250px; /* Ensure logo is responsive */
+    height: auto;
+}
+
+/* Welcome Section */
+section#welcome {
+    text-align: center;
+    background: linear-gradient(120deg, #E2E8F0, #EDF2F7);
+    font-family: 'Roboto', sans-serif;
+    padding: 80px 5%;
+    color: #2D3748;
+    font-size: 1.2em;
+}
+
+/* Pics Section */
+section#pics {
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: scroll-x 20s linear infinite;
+}
+
+@keyframes scroll-x {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Team Section */
+section h2 {
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 1 1 calc(33% - 20px);
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Contact Form Section */
+section#contact {
+    background: #f7fafc;
+    padding: 40px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #5A67D8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4C51BF;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    font-size: 1.1em;
+}
+
+
+
+
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (Portrait) */
+@media (max-width: 767px) {
+    header img {
+        max-width: 150px; /* Adjust logo size for small screens */
+    }
+
+    section#welcome {
+        padding: 50px 20px; /* Reduce padding for smaller screens */
+    }
+
+    section#pics {
+        padding: 50px 10px;
+    }
+
+    #img {
+        gap: 10px;
+        animation: none; /* Disable animation on small screens */
+        flex-direction: column;
+    }
+
+    .team {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .team-member {
+        flex: 1 1 100%; /* Stack team members vertically on small screens */
+    }
+
+    button {
+        width: 100%; /* Make the button full width on small screens */
+    }
+}
+
+/* Tablets (Portrait & Landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header img {
+        max-width: 200px; /* Adjust logo size for medium screens */
+    }
+
+    section#welcome {
+        padding: 70px 20px; /* Slightly reduce padding */
+    }
+
+    section#pics {
+        padding: 70px 20px;
+    }
+
+    .team {
+        gap: 20px;
+    }
+
+    .team-member {
+        flex: 1 1 calc(50% - 20px); /* 2 members per row */
+    }
+
+    button {
+        width: auto; /* Default button width */
+    }
+}
+
+/* Desktop & Larger Screens */
+@media (min-width: 1025px) {
+    .team-member {
+        flex: 1 1 calc(33% - 20px); /* 3 members per row */
+    }
+
+    button {
+        width: auto; /* Default button width */
+    }
+}
+
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="Header1.png" width="200" alt="CHRISCO ABUNDANT LIFE CHURCH Logo">
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h2>Welcome to CHRISCO ABUNDANT LIFE CHURCH</h2>
+        <p>We are a community that believes in the power of love, faith, and hope. Join us for our weekly services and events!</p>
+        <h3>Church Mission:</h3>
+        <p>At CHRISCO ABUNDANT LIFE CHURCH, we are a vibrant community where everyone is welcomed and encouraged to grow in their faith. Through worship, prayer, and fellowship, we strive to bring people closer to God and one another.</p>
+        <h3>Church Vision:</h3>
+        <p>Our vision is to be a beacon of hope in the community, empowering individuals to live abundantly in Christ. We are committed to making a positive impact locally and globally through acts of kindness and service.</p>
+        <h3>Invitation:</h3>
+        <p>We invite you to be a part of our family. Whether you're visiting for the first time or seeking a spiritual home, we welcome you with open arms.</p>
+    </section>
+
+    <!-- pic's -->
+    <section id="pics">
+        <h2>A Glimpse Into Our Community</h2>
+        <div id="img">
+            <img src="3.jpg" alt="Image 3">
+        </div>
+    </section>
+
+    <!-- member's section -->
+    <section>
+        <h2>Meet Our Team</h2>
+        <div class="team">
+          <div class="team-member">
+            <img src="pastor.jpg" alt="Pastor">
+            <h3>Pastor Evans</h3>
+            <p>Senior Pastor</p>
+          </div>
+          <div class="team-member">
+            <img src="wemen.jpg" alt="Assistant Pastor">
+            <h3>Sis. Emma</h3>
+            <p>Wemen Leader</p>
+          </div>
+          <div class="team-member">
+            <img src="music.jpg" alt="Music Leader">
+            <h3>Sis. Phylis</h3>
+            <p>Worship Leader</p>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- contact 4m -->
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <a href="chriscoabundant@gmail.com"></a>
+                <button type="submit">Send Message</button>
+            </a>
+        </form>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 CHRISCO ABUNDANT LIFE CHURCH.</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
